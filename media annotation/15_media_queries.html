@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Media Queries</title>
+
+  <link rel="stylesheet" href="../assets/normalize.css">
+
+  <style>
+
+    div {
+      width: 200px;
+      aspect-ratio: 1/1;
+      background: red;
+    }
+
+    /*@media all and (max-width: 1000px) and (min-width: 800px) {*/
+    /*    div {*/
+    /*        background: dodgerblue;*/
+    /*    }*/
+    /*}*/
+
+    @media all and (max-width: 1000px) {         /*1000px weddi window eke colour eka dodgerblue we...*/
+      div {
+        background: dodgerblue;
+      }
+    }
+
+    @media all and (max-width: 800px) {          /*window eka resize karaddi 800px weddi colour eka purple we...*/
+      div {
+        background: mediumpurple;
+      }
+    }
+
+    @media all and (max-width: 600px) {          /*window eka resize karaddi 600px weddi colour eka pink we...*/
+      div {
+        background: pink;
+      }
+    }
+
+    @media all and (max-width: 400px) {          /*window eka resize karaddi 400px weddi colour eka orange we...*/
+      div {
+        background: orange;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div></div>
+
+</body>
+
+</html>
